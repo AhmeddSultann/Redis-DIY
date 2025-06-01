@@ -3,8 +3,10 @@ project(Redis_DIY)
 
 set(CMAKE_CXX_STANDARD 14)
 
-include_directories(Server)
+include_directories(ServerClient)
 
 add_executable(Redis_DIY
-        Server/server.cpp
-        Server/server.h)
+        ServerClient/server.cpp
+        ServerClient/server.h
+        ServerClient/client.cpp
+        ServerClient/client.h)
